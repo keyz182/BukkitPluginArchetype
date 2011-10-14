@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>uk.co.dbyz</groupId>
-  <artifactId>bukkitplugin-archetype</artifactId>
+  <artifactId>bukkitplugin</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>bukkitplugin-archetype</name>
+  <name>bukkitplugin</name>
 
   <build>
     <extensions>
