@@ -1,0 +1,11 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+name: ${package}
+main: ${artifactId}
+version: 0.1
+
+commands:
+   ${artifactId}:
+      description: A Command
+      usage: /<command> 
