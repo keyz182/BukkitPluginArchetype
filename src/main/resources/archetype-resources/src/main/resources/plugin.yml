@@ -1,8 +1,8 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-name: ${package}
-main: ${artifactId}
+name: ${artifactId}
+main: ${package}.${artifactId}
 version: 0.1
 
 commands:
