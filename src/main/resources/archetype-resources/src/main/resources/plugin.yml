@@ -6,6 +6,6 @@ main: ${package}.${artifactId}
 version: 0.1
 
 commands:
-   ${artifactId}:
+   command:
       description: A Command
       usage: /<command> 
