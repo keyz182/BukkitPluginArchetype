@@ -20,29 +20,25 @@ package ${package};
     along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import org.bukkit.plugin.PluginManager;
+import org.bukkit.Bukkit;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ${artifactId} extends JavaPlugin {
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockPlaceEvent;
 
-	//ClassListeners
-	private final ${artifactId}CommandExecutor commandExecutor = new ${artifactId}CommandExecutor(this);
-	private final ${artifactId}EventListener eventListener = new ${artifactId}EventListener(this);
-	//ClassListeners
+public class ${artifactId}EventListener implements Listener {
 
-	public void onDisable() {
-		log.info("Disabled message here, shown in console on startup");
-	}
+	// This is just one possible event you can hook.
+	// See http://jd.bukkit.org/apidocs/ for a full event list.
 
-	public void onEnable() { 
+	// All event handlers must be marked with the @EventHandler annotation 
+	// The method name does not matter, only the type of the event parameter
+	// is used to distinguish what is handled.
 
-		PluginManager pm = this.getServer().getPluginManager();
-
-		getCommand("command").setExecutor(commandExecutor);
-
-		// you can register multiple classes to handle events if you want
-		// just call pm.registerEvents() on an instance of each class
-		pm.registerEvents(eventListener, this);
-
+	@EventHandler
+	public void onBlockPlace(BlockPlaceEvent event) {
+		Bukkit.getServer().broadcast("Player " + event.getPlayer().getName() + " placed " + event.getBlock().getType() + " at " + event.getLocation());
 	}
 }

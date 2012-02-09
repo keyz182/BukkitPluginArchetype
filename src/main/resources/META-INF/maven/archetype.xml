@@ -4,6 +4,7 @@
 	<sources>
 		<source>src/main/java/__artifactId__.java</source>
 		<source>src/main/java/__artifactId__CommandExecutor.java</source>
+		<source>src/main/java/__artifactId__Listener.java</source>
 	</sources>
 	<resouces>	
 		<resource>src/main/resources/plugin.yml</resource>
