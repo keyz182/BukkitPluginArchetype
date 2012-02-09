@@ -30,6 +30,12 @@ import org.bukkit.event.block.BlockPlaceEvent;
 
 public class ${artifactId}EventListener implements Listener {
 
+	private ${artifactId} plugin;
+
+	public ${artifactId}EventListener(${artifactId} plugin) {
+		this.plugin = plugin;
+	}
+
 	// This is just one possible event you can hook.
 	// See http://jd.bukkit.org/apidocs/ for a full event list.
 
@@ -39,6 +45,6 @@ public class ${artifactId}EventListener implements Listener {
 
 	@EventHandler
 	public void onBlockPlace(BlockPlaceEvent event) {
-		Bukkit.getServer().broadcast("Player " + event.getPlayer().getName() + " placed " + event.getBlock().getType() + " at " + event.getLocation());
+		Bukkit.getServer().broadcastMessage("Player " + event.getPlayer().getName() + " placed " + event.getBlock().getType() + " at " + event.getBlock().getLocation());
 	}
 }

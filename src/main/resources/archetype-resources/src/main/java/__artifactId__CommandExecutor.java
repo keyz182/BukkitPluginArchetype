@@ -35,10 +35,10 @@ public class ${artifactId}CommandExecutor implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        log.info("onCommand Reached in ${artifactId}");
+        plugin.getLogger().info("onCommand Reached in ${artifactId}");
 
         if (command.getName().equalsIgnoreCase("command")) {
-	    log.info("command used");
+	    plugin.getLogger().info("command used");
             //do something
             return true;
         }

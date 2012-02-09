@@ -31,7 +31,7 @@ public class ${artifactId} extends JavaPlugin {
 	//ClassListeners
 
 	public void onDisable() {
-		log.info("Disabled message here, shown in console on startup");
+		// add any code you want to be executed when your plugin is disabled
 	}
 
 	public void onEnable() { 
@@ -44,5 +44,6 @@ public class ${artifactId} extends JavaPlugin {
 		// just call pm.registerEvents() on an instance of each class
 		pm.registerEvents(eventListener, this);
 
+		// do any other initialisation you need here...
 	}
 }
