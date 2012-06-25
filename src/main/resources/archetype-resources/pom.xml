@@ -5,7 +5,7 @@
 	<artifactId>${artifactId}</artifactId>
 	<packaging>jar</packaging>
 	<version>${version}</version>
-	<name>bukkitplugin</name>
+	<name>${artifactId}</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,7 +14,7 @@
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>1.1-R3</version>
+			<version>1.2.5-R4.0</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
