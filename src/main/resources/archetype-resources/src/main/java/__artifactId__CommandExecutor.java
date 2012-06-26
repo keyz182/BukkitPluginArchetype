@@ -25,12 +25,9 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.logging.Logger;
-
 public class ${artifactId}CommandExecutor implements CommandExecutor {
 
     private ${artifactId} plugin;
-    Logger log = Logger.getLogger("Minecraft");//Define your logger
 
     public ${artifactId}CommandExecutor(${artifactId} plugin) {
         this.plugin = plugin;
@@ -38,10 +35,10 @@ public class ${artifactId}CommandExecutor implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        log.info("onCommand Reached in ${artifactId}");
+        plugin.getLogger().info("onCommand Reached in ${artifactId}");
 
         if (command.getName().equalsIgnoreCase("command")) {
-	    log.info("command used");
+	    plugin.getLogger().info("command used");
             //do something
             return true;
         }
