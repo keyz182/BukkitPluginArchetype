@@ -13,3 +13,5 @@ and select
 uk.co.dbyz:bukkitplugin (bukkitplugin)
 
 from the list.
+
+[![Build Status](http://build.dbyz.co.uk/buildStatus/icon?job=BukkitPluginArchetype)](http://build.dbyz.co.uk/job/BukkitPluginArchetype/)
