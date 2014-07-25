@@ -24,8 +24,24 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<!foobar Cool foobar dependency -->
-	</dependencies>
+		<!-- Cool foobar API below dont forget to uncomment the corresponding repo -->
+		
+		<!--
+		<dependency>
+        	    	<groupId>net.milkbowl.vault</groupId>
+            		<artifactId>VaultAPI</artifactId>
+            		<version>RELEASE</version>
+            		<scope>provided</scope>
+        	</dependency>
+            	-->
+            	<!--
+            	<dependency>
+    			<groupId>com.comphenix.protocol</groupId>
+    			<artifactId>ProtocolLib</artifactId>
+    			<version>RELEASE</version>
+  			</dependency>
+		</dependencies>
+		-->
 	<build>
 		<plugins>
 			<plugin>
@@ -44,5 +60,13 @@
 			<id>bukkit-repo</id>
 			<url>http://repo.bukkit.org/content/groups/public</url>
 		</repository>
+		<!-- Somes repo for usefull Api above-->
+		<!--
+		<repository>
+    		<id>comphenix-rep</id>
+    		<name>Comphenix Repository</name>
+    		<url>http://repo.comphenix.net/content/groups/public</url>
+    		-->
+  </repository>
 	</repositories>
 </project>
