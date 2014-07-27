@@ -26,7 +26,7 @@
 		</dependency>
 		<!-- Cool foobar API below dont forget to uncomment the corresponding repo -->
 		
-		<!--
+		<!-- Vault
 		<dependency>
         	    	<groupId>net.milkbowl.vault</groupId>
             		<artifactId>VaultAPI</artifactId>
@@ -34,14 +34,24 @@
             		<scope>provided</scope>
         	</dependency>
             	-->
-            	<!--
+            	
+            	<!-- Protocolib
             	<dependency>
     			<groupId>com.comphenix.protocol</groupId>
     			<artifactId>ProtocolLib</artifactId>
     			<version>RELEASE</version>
-  			</dependency>
-		</dependencies>
+  		</dependency>
 		-->
+		
+		<!-- Metrics
+		<dependency>
+        		<groupId>org.mcstats</groupId>
+        		<artifactId>metrics</artifactId>
+		        <version>R6</version>
+        		<scope>compile</scope>
+    		</dependency>
+		-->
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
@@ -60,13 +70,29 @@
 			<id>bukkit-repo</id>
 			<url>http://repo.bukkit.org/content/groups/public</url>
 		</repository>
+		
 		<!-- Somes repo for usefull Api above-->
-		<!--
+		
+		<!-- Protocolib repo
 		<repository>
-    		<id>comphenix-rep</id>
-    		<name>Comphenix Repository</name>
-    		<url>http://repo.comphenix.net/content/groups/public</url>
+    			<id>comphenix-rep</id>
+    			<name>Comphenix Repository</name>
+    			<url>http://repo.comphenix.net/content/groups/public</url>
+    		</repository>
     		-->
-  </repository>
+    		
+    		<!-- Vault repo
+    		<repository>
+			<id>vault-repo</id>
+			<url>http://nexus.theyeticave.net/content/repositories/pub_releases</url>
+		</repository>
+    		-->
+    		
+    		<!-- Metrics repo
+    		<repository>
+        		<id>Plugin Metrics</id>
+        		<url>http://repo.mcstats.org/content/repositories/public</url>
+    		</repository>
+    		-->
 	</repositories>
 </project>
